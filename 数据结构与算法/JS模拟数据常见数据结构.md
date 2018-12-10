@@ -63,7 +63,7 @@ function Stack() {
 let items = [];
 ```
 以上只是建立了栈的一个“壳”，我们需要实现栈对应的增删改查，且需要对应栈先进后出的特征。
-#### 2.2 添加元素
+#### 2.2 添加元素
 ```JavaScript
 this.push = function(element){
     items.push(element);    //直接使用数组的push方法保存
@@ -76,7 +76,7 @@ this.pop = function(){
     return;
 }
 ```
-如上所示，使用数组的push和pop后，自然就遵循了LIFO原则。
+如上所示，使用数组的push和pop后，自然就遵循了LIFO原则。
 #### 2.4 一些辅助方法
 ```JavaScript
 //查看栈顶元素
