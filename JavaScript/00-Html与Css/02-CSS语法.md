@@ -95,7 +95,7 @@ p {  font: italic 700 30px 宋体; }
 行高的定义：两行文本基线的距离，就是行高（这里才是正确量取行高的方法）
 行高 = 文字大小 + 上间距 + 下间距   
 三者加起来如果等于盒子高度，正好文字居中！
-![](/images/JavaScript/01-02-01.png)
+![](/images/JavaScript/00-02-01.png)
 当行高值为父容器的高度时，可以让父容器中的文字垂直显示。
 如果单独给一个元素设置行高：
 
@@ -197,7 +197,7 @@ background: url("1.png") red no-repeat 30px 40px;
 ## 八 盒模型
 #### 8.1 盒模型简介
 盒模型主要用来网页布局，盒子包括：border(边框)、内边距（padding）、外边距（margin）：
-![](/images/JavaScript/01-02-02.png)
+![](/images/JavaScript/00-02-02.png)
 #### 8.2 边框border
 border-width:边框宽度
 border-style:边框样式，solid（实线）、dotted（点线）、dashed（虚线）
