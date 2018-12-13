@@ -14,7 +14,7 @@
 ## Node.js书籍
 ```
 1《新时期的Node.js入门》        
-2《Node.js实战（第2版）》       
+2《Node.js实战（第2版）》(Node in Action)       
 3《Node.js设计模式》           
 4《Node.js实战（第2季）》      
 4《使用Egg.js+Vue.js+Docker》   
