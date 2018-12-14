@@ -235,3 +235,11 @@ $(“div”).scrolllLeft();	    // 被卷曲的宽度，即相对于滚动条左
 */
 
 ```
+#### 3.6 filter has not
+```javascript
+$('div').filter('#div1').css('background','red');
+$('div').has('span').css('background','green');
+```
+filter():	过滤
+not()：		filter的反义词
+has()：		has查看的是当前元素是否包含，filter过滤的是所有同级元素
