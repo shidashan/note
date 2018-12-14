@@ -54,5 +54,4 @@ $(this).animate({width : 300} , 4000 , 'linear',function(){
     alert(123);
 });
 ```
-
 注意：所有能够执行动画的属性必须只有一个数字类型的值，比如：要改变字体大小，要使用：fontSize（font-size），不要使用：font
