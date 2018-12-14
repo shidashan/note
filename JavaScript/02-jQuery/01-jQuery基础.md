@@ -64,31 +64,38 @@ id选择器        $('#btn');
 ```
 #### 2.3 过滤选择器
 ```
-:eq(index)	选择匹配索引的元素		$('li:eq(2)')	选择索引号为2的li
+:eq(index)	选择匹配索引的元素		    $('li:eq(2)')选择索引号为2的li
 :odd		选择匹配奇数索引元素		$('li:odd')
 :even		选择匹配偶数索引元素		$('li:even')
 ```
 #### 2.4 筛选选择器
 ```
-find(selector)
-查找所有后代元素	
+查找所有后代元素:find(selector)
 $(“#j_wrap”).find(“li”).css(“color”, “red”);
 
-children()
-查找直接子代元素	
+查找直接子代元素:children()
 $(“#j_wrap”).children(“ul”).css(“color”, “red”);
 
-siblings()	
-查找所有兄弟元素（不包括自己）	
+查找所有兄弟元素:siblings()	（不包括自己）
 $(“#j_liItem”).siblings().css(“color”, “red”);
 
-parent()	
-查找父元素	
+查找所有兄弟节点：
+nextAll()：查找下一个所有兄弟节点
+nextUntil()：作用同上，可以传入参数，查找到指定位置  
+prevAll()：查找上一个所有的兄弟节点
+prevUntil()：作用同上，可以传入参数，查找到指定位置 
+
+查找父元素:parent()	
 $(“#j_liItem”).parent(“ul”).css(“color”, “red”);    //选择id为j_liItem的父元素
 
-eq(index)	
-查找指定元素的第index个元素	
-$(“li”).eq(2).css(“color”, “red”);                  //选择所有li元素中的第二个
+所有祖先节点:parents()  //传入参数具备筛选功能（只有复合参数的祖先节点）
+
+获取有定位的父级:offsetParent() 
+
+查找指定元素的第index个元素:eq(index)	
+$(“li”).eq(2).css(“color”, “red”);   //选择所有li元素中的第二个
+
+slice(start,end):返回选择元素集合从第start-end位置的元素
 ```
 ## 三 jQuery的DOM操作
 #### 3.1 jQuery操作样式
@@ -115,5 +122,116 @@ $(selector).toggleClass(“liItem”);
 ```
 #### 3.2 节点操作
 ```javascript
+//创建元素 $() 或者 节点.html()
+var $spanNode = $("<span>我是一个span元素</span>");
+var node = $("#box").html（"<li>我是li</li>"）；	
+
+//添加元素 append()
+$(selector).append($node);				//追加传入jQuery对象
+$(selector).append('<div></div>');		//直接传入html片段
+
+appendTo(s)          //添加到s元素最后面，原生没有
+prepend()           //添加到子元素最前面，类似原生的appendChild()
+after()		  	    //添加到自己后面（作为兄弟）
+before()		    //添加到自己前面（作为兄弟）
+
+//获取到的元素剪切到某个位置
+nsertBefore()  	    //原生JS这里是选中后复制到某个位置
+insertAfter()		//原生JS没有insertAfter()
+
+//html() val() text
+html():	没有参数是获取包含标签的内容，有参数是插入内容,
+        设置内容时，如果是html标记，与原生 innerHTML相同
+text():	没有参数获取不包含标签的内容(字符串)，有参数是插入内容，
+        设置内容时，类似原生innerText（火狐使用textContent获取），无视HTML标记插入纯文本，但是text()不存在兼容问题
+val():  获取匹配元素的值，只匹配第一个元素，
+        有参数时设置所有匹配到的元素的值
+//删除与清空元素
+$(selector).empty();    // 清空参数所有子元素，会清除事件，推荐使用
+$(selector).html("");	// 同上，但元素事件不会被清空,会出现内存泄露
+
+$(selector).remove();	// 删除元素与事件，包括自己，返回被删除的元素
+$(selector).detach();	// 同上，但是会保留事件
+
+//复制元素 clone()
+$(selector).clone();        //复制匹配的元素，返回值为复制的新元素
+$(selector).clone(true);	//同时复制操作行为
+
+```
+#### 3.3 属性操作
+使用style获取的都采用css()方法设置，在标签里书写的样式，使用attr()获取。
+```
+attr():
+$(selector).attr(“title”, “jQeury简介”);	//设置属性，设置多个传入对象
+$(selector).attr(“title”);				//获取属性
+$(selector).removeAttr(“title”); 		//移除属性
+
+prop():
+注意：checked、selected、disabled要使用.prop()方法。(1.7版本之前仍然可以使用attr)。
+prop方法通常用来影响DOM元素的动态状态，而不是改变的HTML属性。例如：input和button的disabled特性，以及checkbox的checked特性。
+
+
+```
+#### 3.4 快速操作表单-数据串联
+```html
+<form>
+    <input type="text" name="a" value="1">
+<input type="text" name="b" value="2">
+<input type="text" name="c" value="3">
+</form>
+<script>
+    $(function(){
+
+        var str = $('form').serialize());
+        var arr = $('form').serializeArray();
+
+        /*
+        str = a=1&b=2&c=3
+        arr = [
+            { name : 'a' , value : '1' },
+            { name : 'b' , value : '2' },
+            { name : 'c' , value : '3' }
+        ]
+        */
+        
+    });
+
+```
+#### 3.5 操作尺寸位置
+```javascript
+//设置宽高 weight height
+$(selector).height();       //获取高度
+$(selector).height(200);	//设置高度						
+//注意：使用css()获取的宽高是string类型，带px后缀，而height()是数字型
+
+innerWidth()		//获取width+左右padding	
+outerWidth()	    //获取width+左右padding+左右边框宽度
+outerWidth(true)    //获取width+左右padding+左右边框宽度+左右margin
+//注意：原生的outerWidth无法获取隐藏元素的值，而jQquery可以。所以jQuery中可以获取到隐藏元素的一些属性值。
+
+//  offset():获取或设置元素相对于文档的位置
+$(selector).offset();
+$(selector).offset({left:100, top: 150});
+// 注意点：设置offset后，如果元素没有定位(默认值：static)，则被修改为relative
+
+// position() 获取相对于其最近的具有定位的父元素的位置,只能获取不能设置
+$(selector).position();		// 返回值为对象：{left:num, top:num}
+
+// scrollTop() :	获取或者设置元素垂直方向滚动的位置
+$(selector).scrollTop(100);     //无参数表示获取偏移,有参数表示设置偏移
+
+// scrollLeft() :	获取或者设置元素水平方向滚动的位置
+$(selector).scrollLeft(100);
+
+//总结：
+$(“div”).offset();		    // 获取或设置坐标值，设置值后变成相对定位
+$(“div”).position();		// 获取坐标值 子绝父相 	只能读取不能设置
+
+$(“div”).scrollTop();		// 被卷曲的高度，即相对于滚动条顶部的偏移
+$(“div”).scrolllLeft();	    // 被卷曲的宽度，即相对于滚动条左部的偏移
+/*
+垂直滚动条位置 是可滚动区域 在 可视区域上方的 被隐藏区域的高度。
+如果滚动条在最上方没有滚动 或者 当前元素没有出现滚动条，那么这个距离为0
+*/
 
 ```
