@@ -88,35 +88,57 @@ MongoDB:
 ## 四 语言类书籍
 #### 4.1 Java书籍
 ```
-基础篇：《Java核心技术卷》《Java JDK9 学习笔记》
-开发篇：《Java开发实战经典》《JavaWeb项目开发实战入门》《Spring实战》《阿里巴巴Java开发手册》
-提高篇：《Java程序性能优化》《Java编程思想》《Effective Java》《Java性能优化权威指南》《Think in Java》
-        《Java并发编程的艺术》《Java并发编程实战》
-架构篇：《分布式java应用：基础与实践》《企业应用架构模式》《大型网站系统与Java中间件实践》《架构探险，从零开始JavaWeb框架》
-原理篇：《深度剖析Tomcat》《深入分析javaweb技术内幕》《深入分析Spring技术内幕》《深入理解Java虚拟机》
+基础篇：
+        《Java核心技术卷》              《Java JDK9 学习笔记》
+开发篇：
+        《Java开发实战经典》            《JavaWeb项目开发实战入门》         
+        《Spring实战》                 《阿里巴巴Java开发手册》     
+提高篇：
+        《Java程序性能优化》            《Java编程思想》
+        《Effective Java》             《Java性能优化权威指南》
+        《Think in Java》
+        《Java并发编程的艺术》          《Java并发编程实战》
+架构篇：
+        《分布式java应用：基础与实践》   《企业应用架构模式》
+        《大型网站系统与Java中间件实践》 《架构探险，从零开始JavaWeb框架》
+        
+原理篇：  
+        《深入分析javaweb技术内幕》     《深度剖析Tomcat》
+        《深入分析Spring技术内幕》      《深入理解Java虚拟机》
 
 ```
 #### 4.2 JavaScript书籍
 ```
-网页篇：《CSS世界》
-基础篇：《JavaScript权威指南》（名著-犀牛书）《JavaScript高级程序设计》（名著-小红书）
-提高篇：《JavaScript语言精粹》（名著-蝴蝶书）《你不知道JavaScript》（推荐上卷、中卷，下卷内容与《深入理解ECMAScript6》重复）
-        《JavaScript核心技术开发解密》《高性能JavaScript》
-ES6篇：《深入理解ECMAScript6》《ECMAScript6入门》
-架构篇：《JavaScript设计模式与开发实践》《JavaScript设计模式》        
+网页篇：
+        《CSS世界》
+基础篇：
+        《JavaScript权威指南》          《JavaScript高级程序设计》
+提高篇：
+        《JavaScript语言精粹》          《你不知道JavaScript》
+        《JavaScript核心技术开发解密》   《高性能JavaScript》
+        《JavaScript设计模式与开发实践》 《JavaScript设计模式》 
+ES6篇：
+        《深入理解ECMAScript6》         《ECMAScript6入门》      
 ```
 #### 4.3 Node.js书籍
 ```
-基础篇：《新时期的Node.js入门》
-开发篇：《Node.js实战（第2版）》(Node in Action) 《Node.js设计模式》《Node.js实战（第2季）》
-        《使用Egg.js+Vue.js+Docker》 《Node.js调试指南》
-提高篇：《Node.js:来一打C++扩展》《深入浅出Node.js》           
+基础篇：
+        《新时期的Node.js入门》
+开发篇：
+        《Node.js实战（第2版）》         《Node.js实战（第2季）》
+        《使用Egg.js+Vue.js+Docker》    《Node.js调试指南》
+提高篇：
+        《Node.js设计模式》
+        《Node.js:来一打C++扩展》       《深入浅出Node.js》           
 ```
 #### 4.4 Golang书籍
 ```
-基础篇：《Go语言实战》《Go程序设计语言》
-开发篇：《Go Web编程》
-提高篇：《Go并发编程》                            
+基础篇：
+        《Go语言实战》                  《Go程序设计语言》
+开发篇：
+        《Go Web编程》
+提高篇：
+        《Go并发编程》                            
 ```
 ## 五 宵录怡情
 ```
