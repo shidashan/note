@@ -1,7 +1,6 @@
 ##  前言
 记录笔记也是一种生活。
-以下推荐了笔者精挑细选一些书籍，部分书籍给予了数字顺序标识，表示推荐观看的顺序。
-TODO：
+以下推荐了笔者精挑细选一些书籍，以及待办事项：
 - 陆续将所有笔记修改为md格式
 - Java开发笔记：整理中
 - Python开发笔记：整理中
@@ -11,27 +10,17 @@ TODO：
 #### 1.1 数据库书籍
 ```
 MySQL:
-
-1《MySQL核心技术手册》        
-2《深入浅出MySQL数据库开发优化与管理维护》
-3《高性能MySQL》
-4《MySQL高效编程》
-4《数据库索引设计与优化》
-4《MySQL技术内幕》
-4《深入理解MySQL核心技术》
-5《MySQL内核_InnoDB存储引擎》
+基础篇：《MySQL核心技术手册》《深入浅出MySQL数据库开发优化与管理维护》
+提高篇：《高性能MySQL》《MySQL高效编程》《数据库索引设计与优化》
+原理篇：《MySQL技术内幕》《深入理解MySQL核心技术》《MySQL内核_InnoDB存储引擎》
 
 Redis:
-
-1《Redis实战》           
-2《Redis开发与运维》       
-3《Redis设计与实现》      
+基础篇：《Redis实战》《Redis开发与运维》  
+原理篇：《Redis设计与实现》    
 
 MongoDB:
-
-1《MongoDB》
-2《MongoDB实战》
-3《MongoDB应用设计模式》
+基础篇：《MongoDB权威指南》《MongoDB实战》
+提高篇：《MongoDB应用设计模式》
 
 ```
 
@@ -72,13 +61,10 @@ MongoDB:
 ## 三 原理书籍
 #### 3.1 算法
 ```
-1《算法设计与分析基础》 （完全0基础可以看《大话数据结构》）      
-2《数据结构与算法分析》 （分别有C，Java，C++，Python等各种版本）        
-3《程序设计与算法艺术》         
-3《算法竞赛》                 
-4《算法导论》                 
-4《算法》                    
-4《算法之美》                
+基础篇：《算法设计与分析基础》（完全0基础可以看《大话数据结构》）
+经典篇：《数据结构与算法分析》（分别有C，Java，C++，Python等各种版本）《算法》 
+神作：  《算法导论》
+其他：  《程序设计与算法艺术》《算法竞赛》 《算法之美》             
 ```
 #### 3.2 网络
 ```
@@ -102,59 +88,35 @@ MongoDB:
 ## 四 语言类书籍
 #### 4.1 Java书籍
 ```
-1《Java核心技术卷》
-1《Java JDK9 学习自己》
-1《Java开发实战经典》
-2《JavaWeb项目开发实战入门》
-2《Spring实战》
-3《阿里巴巴Java开发手册》
-3《Java程序性能优化》
-3《Java编程思想》
-3《Effective Java》
-3《Java性能优化权威指南》
-4《Think in Java》
-5《深度剖析Tomcat》
-5《架构探险，从零开始JavaWeb框架》
-6《分布式java应用：基础与实践》
-6《企业应用架构模式》
-6《大型网站系统与Java中间件实践》
-6《Java并发编程的艺术》
-6《Java并发编程实战》
-7《深入分析javaweb技术内幕》
-7《深入分析Spring技术内幕》
-8《深入理解Java虚拟机》
+基础篇：《Java核心技术卷》《Java JDK9 学习笔记》
+开发篇：《Java开发实战经典》《JavaWeb项目开发实战入门》《Spring实战》《阿里巴巴Java开发手册》
+提高篇：《Java程序性能优化》《Java编程思想》《Effective Java》《Java性能优化权威指南》《Think in Java》
+        《Java并发编程的艺术》《Java并发编程实战》
+架构篇：《分布式java应用：基础与实践》《企业应用架构模式》《大型网站系统与Java中间件实践》《架构探险，从零开始JavaWeb框架》
+原理篇：《深度剖析Tomcat》《深入分析javaweb技术内幕》《深入分析Spring技术内幕》《深入理解Java虚拟机》
 
 ```
 #### 4.2 JavaScript书籍
 ```
-1《CSS世界》               
-1《JavaScript权威指南》（名著-犀牛书）     
-1《JavaScript高级程序设计》（名著-小红书） 
-2《JavaScript语言精粹》（名著-蝴蝶书）     
-2《你不知道JavaScript》（推荐上卷、中卷，下卷内容与《深入理解ECMAScript6》重复）     
-3《高性能JavaScript》       
-3《JavaScript设计模式与开发实践》《JavaScript设计模式》
-3《JavaScript核心技术开发解密》
-3《深入理解ECMAScript6》
-3《ECMAScript6入门》        
+网页篇：《CSS世界》
+基础篇：《JavaScript权威指南》（名著-犀牛书）《JavaScript高级程序设计》（名著-小红书）
+提高篇：《JavaScript语言精粹》（名著-蝴蝶书）《你不知道JavaScript》（推荐上卷、中卷，下卷内容与《深入理解ECMAScript6》重复）
+        《JavaScript核心技术开发解密》《高性能JavaScript》
+ES6篇：《深入理解ECMAScript6》《ECMAScript6入门》
+架构篇：《JavaScript设计模式与开发实践》《JavaScript设计模式》        
 ```
 #### 4.3 Node.js书籍
 ```
-1《新时期的Node.js入门》        
-2《Node.js实战（第2版）》(Node in Action)       
-3《Node.js设计模式》           
-4《Node.js实战（第2季）》      
-4《使用Egg.js+Vue.js+Docker》   
-5《Node.js调试指南》            
-5《Node.js:来一打C++扩展》      
-5《深入浅出Node.js》            
+基础篇：《新时期的Node.js入门》
+开发篇：《Node.js实战（第2版）》(Node in Action) 《Node.js设计模式》《Node.js实战（第2季）》
+        《使用Egg.js+Vue.js+Docker》 《Node.js调试指南》
+提高篇：《Node.js:来一打C++扩展》《深入浅出Node.js》           
 ```
 #### 4.4 Golang书籍
 ```
-1《Go语言实战》                 
-2《Go Web编程》                 
-3《Go程序设计语言》             
-4《Go并发编程》                             
+基础篇：《Go语言实战》《Go程序设计语言》
+开发篇：《Go Web编程》
+提高篇：《Go并发编程》                            
 ```
 ## 五 宵录怡情
 ```
