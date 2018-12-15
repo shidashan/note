@@ -10,17 +10,27 @@
 #### 1.1 数据库书籍
 ```
 MySQL:
-基础篇：《MySQL核心技术手册》《深入浅出MySQL数据库开发优化与管理维护》
-提高篇：《高性能MySQL》《MySQL高效编程》《数据库索引设计与优化》
-原理篇：《MySQL技术内幕》《深入理解MySQL核心技术》《MySQL内核_InnoDB存储引擎》
+基础篇：
+        《MySQL核心技术手册》           《深入浅出MySQL数据库开发优化与管理维护》
+提高篇：
+        《高性能MySQL》                 《MySQL高效编程》
+        《数据库索引设计与优化》
+原理篇：
+        《MySQL技术内幕》   
+        《深入理解MySQL核心技术》
+        《MySQL内核_InnoDB存储引擎》
 
 Redis:
-基础篇：《Redis实战》《Redis开发与运维》  
-原理篇：《Redis设计与实现》    
+基础篇：
+        《Redis实战》                   《Redis开发与运维》  
+原理篇：
+        《Redis设计与实现》    
 
 MongoDB:
-基础篇：《MongoDB权威指南》《MongoDB实战》
-提高篇：《MongoDB应用设计模式》
+基础篇：
+        《MongoDB权威指南》             《MongoDB实战》
+提高篇：
+        《MongoDB应用设计模式》
 
 ```
 
