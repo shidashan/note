@@ -7,65 +7,8 @@ TODO：
 - Python开发笔记：整理中
 - 网络与编译原理笔记：整理中
 
-## 一 语言类书籍
-#### 1.1 Java书籍
-```
-1《Java核心技术卷》
-1《Java JDK9 学习自己》
-1《Java开发实战经典》
-2《JavaWeb项目开发实战入门》
-2《Spring实战》
-3《阿里巴巴Java开发手册》
-3《Java程序性能优化》
-3《Java编程思想》
-3《Effective Java》
-3《Java性能优化权威指南》
-4《Think in Java》
-5《深度剖析Tomcat》
-5《架构探险，从零开始JavaWeb框架》
-6《分布式java应用：基础与实践》
-6《企业应用架构模式》
-6《大型网站系统与Java中间件实践》
-6《Java并发编程的艺术》
-6《Java并发编程实战》
-7《深入分析javaweb技术内幕》
-7《深入分析Spring技术内幕》
-8《深入理解Java虚拟机》
-
-```
-#### 1.2 JavaScript书籍
-```
-1《CSS世界》               
-1《JavaScript权威指南》（名著-犀牛书）     
-1《JavaScript高级程序设计》（名著-小红书） 
-2《JavaScript语言精粹》（名著-蝴蝶书）     
-2《你不知道JavaScript》（推荐上卷、中卷，下卷内容与《深入理解ECMAScript6》重复）     
-3《高性能JavaScript》       
-3《JavaScript设计模式与开发实践》《JavaScript设计模式》
-3《JavaScript核心技术开发解密》
-3《深入理解ECMAScript6》
-3《ECMAScript6入门》        
-```
-#### 1.3 Node.js书籍
-```
-1《新时期的Node.js入门》        
-2《Node.js实战（第2版）》(Node in Action)       
-3《Node.js设计模式》           
-4《Node.js实战（第2季）》      
-4《使用Egg.js+Vue.js+Docker》   
-5《Node.js调试指南》            
-5《Node.js:来一打C++扩展》      
-5《深入浅出Node.js》            
-```
-#### 1.4 Golang书籍
-```
-1《Go语言实战》                 
-2《Go Web编程》                 
-3《Go程序设计语言》             
-4《Go并发编程》                             
-```
-## 二 应用类书籍
-#### 2.1 数据库书籍
+## 一 应用类书籍
+#### 1.1 数据库书籍
 ```
 MySQL:
 
@@ -92,24 +35,24 @@ MongoDB:
 
 ```
 
-#### 2.2 云计算
+#### 1.2 云计算
 ```
 《Hadoop》技术内幕
 ```
 
-#### 2.3 分布式
+#### 1.3 分布式
 ```
 《分布式对象存储》
 ```
 
-## 三 工程类书籍
-#### 3.1 软件架构
+## 二 工程类书籍
+#### 2.1 软件架构
 ```
 《微服务架构实战》
 《大型网站技术架构》
 《企业应用架构》
 ```
-#### 3.2 软件工程
+#### 2.2 软件工程
 ```
 《重构》
 《编程之美》
@@ -126,8 +69,8 @@ MongoDB:
 《敏捷开发-敏捷软件开发：原则、模式与实践》
 《图解设计模式》
 ```
-## 四 原理书籍
-#### 4.1 算法
+## 三 原理书籍
+#### 3.1 算法
 ```
 1《算法设计与分析基础》 （完全0基础可以看《大话数据结构》）      
 2《数据结构与算法分析》 （分别有C，Java，C++，Python等各种版本）        
@@ -137,12 +80,12 @@ MongoDB:
 4《算法》                    
 4《算法之美》                
 ```
-#### 4.2 网络
+#### 3.2 网络
 ```
 《图解HTTP》
 《HTTP权威指南》
 ```
-#### 4.3 微机原理
+#### 3.3 微机原理
 ```
 《Linux内核设计与实现》
 《深入理解Linux内核》:适合专业内核程序员阅读
@@ -152,7 +95,64 @@ MongoDB:
 《Unix编程艺术》
 《深入理解计算机系统》
 ```
-#### 4.3 编译原理
+#### 3.4 编译原理
 ```
 《编译原理》
+```
+## 四 语言类书籍
+#### 4.1 Java书籍
+```
+1《Java核心技术卷》
+1《Java JDK9 学习自己》
+1《Java开发实战经典》
+2《JavaWeb项目开发实战入门》
+2《Spring实战》
+3《阿里巴巴Java开发手册》
+3《Java程序性能优化》
+3《Java编程思想》
+3《Effective Java》
+3《Java性能优化权威指南》
+4《Think in Java》
+5《深度剖析Tomcat》
+5《架构探险，从零开始JavaWeb框架》
+6《分布式java应用：基础与实践》
+6《企业应用架构模式》
+6《大型网站系统与Java中间件实践》
+6《Java并发编程的艺术》
+6《Java并发编程实战》
+7《深入分析javaweb技术内幕》
+7《深入分析Spring技术内幕》
+8《深入理解Java虚拟机》
+
+```
+#### 4.2 JavaScript书籍
+```
+1《CSS世界》               
+1《JavaScript权威指南》（名著-犀牛书）     
+1《JavaScript高级程序设计》（名著-小红书） 
+2《JavaScript语言精粹》（名著-蝴蝶书）     
+2《你不知道JavaScript》（推荐上卷、中卷，下卷内容与《深入理解ECMAScript6》重复）     
+3《高性能JavaScript》       
+3《JavaScript设计模式与开发实践》《JavaScript设计模式》
+3《JavaScript核心技术开发解密》
+3《深入理解ECMAScript6》
+3《ECMAScript6入门》        
+```
+#### 4.3 Node.js书籍
+```
+1《新时期的Node.js入门》        
+2《Node.js实战（第2版）》(Node in Action)       
+3《Node.js设计模式》           
+4《Node.js实战（第2季）》      
+4《使用Egg.js+Vue.js+Docker》   
+5《Node.js调试指南》            
+5《Node.js:来一打C++扩展》      
+5《深入浅出Node.js》            
+```
+#### 4.4 Golang书籍
+```
+1《Go语言实战》                 
+2《Go Web编程》                 
+3《Go程序设计语言》             
+4《Go并发编程》                             
 ```
