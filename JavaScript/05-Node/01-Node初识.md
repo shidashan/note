@@ -168,7 +168,7 @@ var foo = require("./foo.js");
 console.log(foo.text);
 
 //require 导入核心模块不需要路径
-var http = require('http);
+var http = require('http');
 
 ```
 一个JavaScript文件，可以向外exports无数个变量、函数。但是require的时候，仅仅需要require这个JS文件一次。使用的它的变量、函数的时候，用点语法即可。所以，无形之中，增加了一个顶层命名空间。
